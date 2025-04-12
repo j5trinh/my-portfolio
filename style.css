@@ -1,5 +1,5 @@
 body {
-    font-family:'Segoe UI', sans-serif;
+    font-family:'Noto Sans', sans-serif;
     margin: 0;
     background-color: mintcream;
     color: darkslategrey;
@@ -13,7 +13,7 @@ nav{
 .nav-buttons a {
     text-decoration: none;
     margin-left: 1rem;
-    color: midnightblue;
+    color: darkslategrey;
     font-weight: bold;
     transition: color 0.32s ease;
 }
@@ -33,19 +33,37 @@ nav{
     border-radius: 12px;
     border: 3px solid #a1887f;
 }
-body.dark-mode{
-    background-color: #3e2723;
-    color: #fbe9e7;
-}
-body.dark-mode nav {
-    background-color: #4e342e;
-}
-body.dark-mode .nav-buttons a{
-    background-color: #ffccbc;
-}
-button{
-    background-color: #8d6e63;
-    color: #fff3e0;
+body.dark-mode {
+    background-color: #191d3a;
+    /* Deep purple background for night-friendly theme */
+ 
+ 
+    color: #f7ba50;
+    /* Light yellow text for good contrast */
+ }
+ 
+ 
+ /* Dark mode navbar */
+ body.dark-mode nav {
+    background-color: #353d79;
+    /* Dark brown nav background */
+ }
+ 
+ 
+ /* Dark mode link color */
+ body.dark-mode .nav-buttons a {
+    color: #f7ba50;
+    /* Yellow-colored links for a warm contrast */
+ }
+ 
+ 
+ /* GENERAL BUTTON STYLES */
+ 
+ 
+ /* Stylized buttons (applies to any <button>) */
+ button {
+    background-color: #8d6e63; /* Soft brown background */
+    color: #fff3e0;            /* Light peach text */
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
@@ -54,20 +72,36 @@ button{
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
-}
-button.hover{
-    background-color: #795548;
-    transform: translate(-2px);
-}
-button:active {
-    transform: translateY(1px);
-}
-.button-container{
+ }
+ 
+ 
+ /* Hover effect on button */
+ button:hover {
+    background-color: #795548; /* Slightly darker brown on hover */
+    transform: translateY(-2px); /* Slight "lift" effect */
+ }
+ 
+ 
+ /* Click/active effect */
+ button:active {
+    transform: translateY(1px); /* Slight "pressed-down" look */
+ }
+ 
+ 
+ /* THEME TOGGLE BUTTON */
+ 
+ 
+ /* Wrapper to center the theme button */
+ .button-container {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
-}
-#theme-toggle {
+    /* Adds space below the button */
+ }
+ 
+ 
+ /* Specific styles for theme toggle button */
+ #theme-toggle {
     padding: 0.75rem 1.5rem;
     background-color: #6d4c41;
     color: #fff;
@@ -76,7 +110,12 @@ button:active {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-} 
-#theme-toggle:hover {
+ }
+ 
+ 
+ /* Hover effect for theme toggle */
+ #theme-toggle:hover {
     background-color: #5d4037;
-}
+    /* Darker tone when hovered */
+ }
+ 
